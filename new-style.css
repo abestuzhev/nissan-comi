@@ -1,0 +1,157 @@
+.used_auto_pagelist .avn_pagelist_img  {
+    height: 225px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.avn_pagelist_item.modelrange_item {
+    padding-bottom: 0;
+}
+
+.avn_pagelist_btn-more {
+    font-family: nissan_brandbold, sans-serif;
+    display: block;
+    border: 1px solid #9c1138;
+    background-color: #c40030;
+    padding: 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.avn_pagelist_btn-more::after {
+    font-family: nissan_icons !important;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    content: "";
+    color: #fff;
+}
+
+.avn_pagelist_btn-sentence {
+    position: relative;
+    font-family: nissan_brandbold, sans-serif;
+    display: block;
+    border: 1px solid #dddddd;
+    background-color: #f0f0f0;
+    /*padding: 10px 29px 10px 0;*/
+    padding: 10px 6px 10px 0;
+    font-size: 15px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.avn_pagelist_btn-sentence::after {
+    font-family: nissan_icons !important;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    content: "";
+    color: #c40030;
+}
+
+
+/*модальное окно*/
+
+.popup-learn-more {
+    /*display: none;*/
+    padding: 30px 30px 40px;
+   max-width: 430px;
+    position: fixed;
+    z-index: 999999;
+    top: -1000px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-out;
+}
+
+.popup-learn-more .btn:disabled {
+    opacity: .7;
+}
+
+.popup-learn-more .title,
+.popup-learn-more .txt {
+   text-align: center;
+}
+
+#learn-more_personal-check {
+    display: none;
+}
+
+.popup-learn-more input[type="checkbox"]:checked + .check_check::after {
+    opacity: 1;
+    visibility: visible;
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    color: #c3002f;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 10px;
+    height: 10px
+}
+
+.popup-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+.popup-bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+
+.popup-show {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    transition: all .3s ease-out;
+}
+
+.bg-show {
+    opacity: .4;
+    z-index: 99999;
+    transition: all .2s ease-out;
+}
+
+/*@keyframes bouns {*/
+    /*0% {*/
+        /*transform: translateY(-2000px);*/
+    /*}*/
+
+    /*100% {*/
+        /*transform: translateY(50%);*/
+    /*}*/
+/*}*/
+
