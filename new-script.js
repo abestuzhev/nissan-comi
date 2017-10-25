@@ -14,7 +14,7 @@ $(function(){
         $('body').css({
             'overflow':'hidden'
         });
-        $('.main_wrapper').css({
+        $('body').css({
             'padding-right':'16px'
         });
     });
@@ -26,7 +26,7 @@ $(function(){
         $('body').css({
             'overflow':'auto'
         });
-        $('.main_wrapper').css({
+        $('body').css({
             'padding-right':'0'
         });
     });
